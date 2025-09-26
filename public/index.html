@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./bundle.js" defer></script>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    if (window.SUPPORT_FORM) {
+       console.log('inserting support form');
+       document.getElementById("support_form_target").appendChild(window.SUPPORT_FORM);
+    }
+  });
+</script>
+<body>
+   <h1>Support Form Demo</h1>
+   <div id="support_form_target"></div>
+</body>
